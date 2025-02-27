@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "posts#index"
   root to:"lists#index"
+  resources :lists, only:[:index, :show, :new, :create]
 end
 
 # Voici les actions utilisateur que nous voulons implémenter dans notre application :
