@@ -3,6 +3,7 @@ class BookmarksController < ApplicationController
   before_action :set_list
 
   def new
+    raise
     @bookmark = Bookmark.new
   end
 

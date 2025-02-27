@@ -8,7 +8,6 @@
         <li class="list-group-item d-flex justify-content-between align-items-center">
             <%= bookmark.movie.title %>
           <span class=""><%= bookmark.comment %></span>
-          <%# <%= link_to "delete", list_path(@list), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %> %>
         </li>
       <% end %>
     </ul>
@@ -19,3 +18,5 @@
 
 
 <%= link_to "Add a bookmark", new_list_bookmark_path(@list) %>
+
+          <%= link_to "delete", list_path(@list), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
